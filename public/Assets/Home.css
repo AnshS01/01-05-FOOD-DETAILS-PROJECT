@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: #DC3545;
+    --lRed: #dc354612;
+}
+
+.bg {
+    background-color: var(--lRed);
+}
+
+/* large dispaly */
+@media(min-width:992px) {}
+
+/* median display */
+@media(max-width:992px) {
+    .btn_all {
+        margin: 0vw 5vw !important;
+    }
+}
+
+/* small display */
+@media(max-width:767px) {
+    .btn_all {
+        margin: 0vw 2vw !important;
+    }
+}
+
+/* mobail display */
+@media(max-width:450px) {
+    .btn_all {
+        margin: 0vw 0vw !important;
+        font-size: 12px !important;
+    }
+
+    .btn_all button {
+        /* margin: 0vw 0vw!important; */
+        font-size: 12px !important;
+    }
+
+}
+
+
+/* nav bar  */
+.logo img,
+.logo1 img {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.logo1 img {
+    width: 40%;
+}
+
+.logo p,
+.logo1 p {
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav ul li a {
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in;
+}
+
+.nav ul li a:hover {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--red);
+}
+
+.nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav button :hover {
+    color: var(--red);
+}
+
+.fab:hover {
+    color: var(--red);
+}
+
+/* sec 4 1*/
+.service img {
+    width: 30% !important;
+}
+
+.service h5 {
+    font-size: clamp(19px, 2.5vw, 24px);
+}
+
+/* sec 4 2 */
+.btn_all {
+    background-color: var(--red);
+    margin: 0px 10vw;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.btn_all button img {
+    width: 30%;
+    margin: 5px;
+}
+
+.btn_all button {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.product_hover {
+    height: 100%;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.sec1_h2 {
+    font-size: 50px;
+}
+
+.sec1_i {
+    font-size: 12px;
+}
+
+.sec6_ava {
+    width: 70px;
+}
+
+.card_img {
+    width: 35% !important;
+}
+
+.common_sec {
+    background-image: url("../banner-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+}
+
+.paginationbttns {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.paginationbttns a {
+    padding: 5px 13px;
+    text-decoration: none;
+    background-color: #df2020;
+    color: #fff !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.paginationbttns a:hover {
+    background-color: #212245;
+}
+.form_bg{
+    background-color: #ffe9ec;
+}
+.product_card{
+    transition: all ease 1s;
+    overflow: hidden;
+}
+.product_card:hover{
+    scale: 1.2;
+}
+.header_span{
+    padding: 2px 4px;
+    border-radius: 50%  ;
+}
+.link{
+    color: #212245;
+    text-decoration: none;
+
+}
+.link h5{
+    font-size: 15px;
+}
